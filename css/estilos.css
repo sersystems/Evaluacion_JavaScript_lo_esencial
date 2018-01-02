@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: 'Lobster', cursive;
+	src: url(../fonts/Lobster-Regular.ttf)) format('ttf');
+}
+
+.fontSombra{
+	text-shadow: 1px 1px 5px gray;
+        -webkit-text-shadow: 1px 1px 5px gray;
+		-moz-text-shadow: 1px 1px 5px gray;
+        -ms-text-shadow: 1px 1px 5px gray;
+}
+.fontLogo{
+	padding-left: 2% !important;
+	font-family: 'Lobster', cursive;
+}
+.contenedor{
+	padding-top: 3% !important;
+}
+
+
+nav{
+	margin-bottom: 0.5% !important;
+}
+p{
+	font-size: 1.2em;
+}
+footer {
+	text-align: center !important;
+	border-top: 2px solid #444;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+ 	clear: both;
+}
