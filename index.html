@@ -9,7 +9,7 @@
       <meta name="author" content="Sergio Alberto Regalado Alessi">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>JS Formulario</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos.css">
    </head>
 
@@ -30,27 +30,44 @@
     <section class="container contenedor">
       <div class="col-12">
       <h4 class="text-left text-muted">Formulario</h4><br>
-
-      <form class="col-12" autocomplete="on">
+      <div class="col-12">
         <div class="row">
-          <div class="form-group col-12 offset-md-4 col-md-4">
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" class="form-control" required>
+          <div class="col-12">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr class="active">
+                  <th><b>Código</b></th>
+                  <th><b>Nombre</b></th>
+                  <th><b>Nota</b></th>
+                </tr>
+            </thead>
+              <tbody id="filaAlumno">
+              </tbody>
+            </table>
           </div>
-          <div class="form-group col-12 offset-md-4 col-md-4">
-            <label for="password">Password:</label>
-            <input type="password" name="password" class="form-control" required>
-          </div>
-        </div>
+        </div><br>
         <div class="row">
           <div class="form-group col-12 text-center">
-            <button class="btn btn-primary" type="button" name="btnProcesar">Aceptar1</button>
-            <button class="btn btn-primary" type="button" name="btnProcesar">Aceptar2</button>
-            <button class="btn btn-primary" type="button" name="btnProcesar">Aceptar3</button>
-            <button class="btn btn-primary" type="button" name="btnProcesar">Aceptar4</button>
+            <button class="btn btn-primary" type="button" name="btnProcesar1" onclick="mostrarAlumnos()">Mostrar JSON</button>
+          </div>
+          <div class="form-group col-12 text-center">
+            <button class="btn btn-primary" type="button" name="btnProcesar2" onclick="calcularPromedio()">Calcular Promedio</button>
+            <button class="btn btn-primary" type="button" name="btnProcesar3" onclick="calcularNotaMayor()">Calcular Nota Mayor</button>
+            <button class="btn btn-primary" type="button" name="btnProcesar4" onclick="calcularNotaMenor()">Calcular Nota Menor</button>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-12">
+            <p id="idNotaPromedio"></p>
+          </div>
+          <div class="col-12">
+            <p id="idNotaMayor"></p>
+          </div>
+          <div class="col-12">
+            <p id="idNotaMenor"></p>
           </div>
         </div><br><br>
-      </form>
+      </div>
 
     </div>
     </section>
